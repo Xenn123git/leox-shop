@@ -21,6 +21,8 @@ jobs:
 
       - run: flutter pub get
 
+      - run: flutter create . --platforms=android
+
       - run: flutter build apk --release
 
       - uses: actions/upload-artifact@v4
